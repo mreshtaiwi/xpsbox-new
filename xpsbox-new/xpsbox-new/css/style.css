@@ -1,0 +1,599 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: PT Sans Narrow;
+}
+html {
+	scroll-behavior: smooth;
+}
+header{
+	width: 100%;
+}
+.container ,.services, .galary, .about ,.contact, .main,.black{
+	background-image: linear-gradient(-90deg, rgba(210, 131, 44,0.6), #dcd5d68f);
+}
+.navbartop{
+	width: 100%;
+	background-color: #343D4C;
+	position: fixed;
+	z-index: 10;
+}
+.black{
+	height: 40px;
+	background-color: #D2832C;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.cleardiv{
+	clear: both;
+}
+.logo{
+	margin: 12px 0px 0px 60px;
+}
+/*this for making the logo rounded shape*/
+.logo img{
+	width: 70px;
+	/*border-radius: 50%;*/
+	box-shadow: 0px 0px 2px 2px rgba(228, 149, 54,0.6);
+}
+/*
+.logo img:hover{
+	transform: scale(1.3);
+	transition: 3s;
+	box-shadow: 0px 0px 5px 5px rgba(215, 216, 216,0.6);
+}*/
+.menu{
+	margin-top: 33px;
+	font-family: "Slabo27";
+	margin-left: 87px;
+}
+.menu a{
+	color: #D2832C;
+	text-decoration: none;
+	padding: 0px 6px 0px 15px;
+	/*border-right: 2px solid #D2832C;*/
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 18px;
+  	font-weight: bolder;
+}
+/*.menu a:last-child{
+	border: none;
+}*/
+.menu a:hover{
+	color: #DCD5D6;
+}
+.main{
+	height: 1000px;
+	background-color: #D2832C;
+	padding: 75px 0px 0px 60px;
+}
+.main img{
+	width: 95%;	
+}
+.serviceform{
+	margin-left: 15px;
+	padding-top: 80px;
+}
+.serviceforms{
+	margin-left: 15px;
+	padding-top: 20px;
+}
+.serviceformg{
+	margin-left: 15px;
+	padding-top: 110px;
+}
+.leg{
+	text-align: center;
+	box-shadow: 0px 0px 5px 5px rgba(185, 116, 77,0.6);
+	border: 1px solid #DFE8E7;
+	border-radius: 15px;
+	padding: 5px 45px;
+	color: #D2832C;
+	font-size: 25px;
+	background-color: #343D4C;
+}
+#fieldser{
+	padding: 50px 0px;
+	border-radius: 15px;
+	width: 99%;
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.6);
+	font-family: Anton;
+	letter-spacing: 3px;
+	border: 2px solid #DFE8E7;
+}
+.services{
+    height: 720px;
+    background-color: #D2832C;
+	/*background-image: url('../img/b2.jpg');	
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;*/
+}
+.servicemainpart{
+	height: 800px;
+	padding-top: 90px;
+}
+.gridservice{
+	text-align: center;
+	margin-left: 25px;
+}
+.ourservice{
+	text-align: center;
+	color: #D2832C;	
+	letter-spacing: 3px;
+}
+.servicetextleft{
+	margin: 35px 3px 0px 3px;
+	color: #D2832C;
+	text-align: center;
+	float: left;
+	box-shadow: 0px 0px 3px 5px rgba(228, 149, 54,0.4);
+}
+.servicetextleft a{
+	text-decoration: none;
+	color: #D2832C;
+}
+.img1{
+	width: 100%;
+	overflow: hidden;/*to force the image not to come out the div*/
+}
+.img1 img{
+	/*to make the images same width */
+	width: 392px;
+	height: 246px;
+  	transition: transform 1s ease-in-out;
+}
+.img1 img:hover{
+	transform:scale(1.5) rotate(-15deg);
+	transition: all 2s ease-in-out;	
+}
+.img2 img:hover{
+	transform:scale(1.5) rotate(15deg);
+	transition: all 2s ease-in-out;	
+}
+.con1 {
+	position: relative;
+	width: 100%;
+	background-color: #343D4C;
+}
+.pa {
+	display: block;
+	width: 100%;
+	height: auto;
+	font-size: 18px;
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(53, 62, 77,0.9);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 2s ease;
+}
+.con1:hover .overlay {
+	height: 278px;/*size of that goes up*/
+	overflow: hidden;
+}
+.text {
+	font-family: PT Sans Narrow;
+	width: 100%;
+  	/*white-space: wrap; */
+	color: #D2832C;
+	font-size: 14px;
+	font-weight: bolder;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	padding-left: 5px;
+	line-height: 25px;
+}
+.galary{	
+    height: 1230px;
+    text-align: center;
+    background-color: #D2832C;
+    /*background-color: black;
+    background-image: url(../img/b4.jpg);
+    background-position: center;
+    background-attachment: fixed;*/
+}
+.photos{
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.6);
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px 0px 0px 75px;
+    overflow: hidden;
+    transition-delay: 1s;
+}
+.photos img{
+	width: 100%;
+    height: 100%;
+	transition: transform 1s ease-in-out;
+}
+.photos img:hover{
+	transform: scale(1.5);
+	transition: transform 1s ease-in-out;
+}
+.about{
+	height: 2140px;
+    background-color: #D2832C;
+}
+.mainabout{
+	
+}
+.whyimg{
+	float: left;
+	width: 40%;
+	margin: 100px 0px 0px 100px;
+	/*background-image: url('../img/care.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;*/
+}
+.whyimg img{
+	width: 630px;
+	height: 400px;
+}
+.whytext{
+	float: left;
+	width: 30%;
+	margin: 100px 0px 0px 50px;
+	text-align: left;
+}
+.whytext h2{
+	color: #343D4C;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: Anton;
+}
+.whytext p,span{
+	color: #DCD5D6;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.5em;
+}
+.h1{
+	background-color: black;
+	padding-bottom: 50px;
+    text-align: center;
+    color: #D2832C;
+    font-size: 35px;
+}
+.imgtest{
+	height: 505px;
+	/*background-image: url('../img/Cargoship.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+	/*padding-top: 60px;*/
+}
+.contact{
+	background-color: #D2832C;
+	height: 2200px;
+}
+.contactuper{
+	background-image: url('../img/contact.jpg');
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.9);
+	height: 400px;
+}
+#contactext{
+	padding: 150px 0px 0px 300px;
+	color: #D2832C;
+}
+#contactext h4{
+	margin-left: 55px;
+}
+.globadd{
+	display: flex;
+	height: 645px;
+	padding:15px;
+	margin: 50px 35px;
+	align-items: stretch;
+	justify-content: center;/* put the divs in middle*/
+	flex-wrap: wrap;/* if i add new address it will make it wrapped*/
+}
+.addresses{
+	width: 31%;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.flag{
+	margin: 5px 0px 0px 5px;
+	width: 50%;
+}
+.flag img{
+	width: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(210, 131, 44,0.6);
+}
+.countryadd{
+	color: #D2832C;
+	margin: 5px 0px 0px 0px;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.countryadd p{
+	color:#343D4C;
+	margin-left: 10px;
+	text-align: justify;
+}
+.contactform{
+	margin: 60px 0px 0px 15px;
+}
+.fieldform{
+	background-image: url('../img/weclome.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	height: 740px;
+	width: 98%;
+	padding: 50px 0px;
+}
+legend{
+	box-shadow: 0px 0px 5px 5px rgba(185, 116, 77,0.6);
+	border: 2px solid #DFE8E7;
+	border-radius: 15px;
+	padding: 10px 45px;
+	color: #D2832C;
+	margin: 20px 0px 0px 50px; 
+	font-size: 35px;
+	text-align: center;
+	background-image: url('../img/back.png');
+}
+#fg{
+	padding-top: 20px;
+	border-radius: 15px;
+	width: 98%;
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.6);
+	border: 2px solid #DFE8E7;
+	font-family: Anton;
+	height: 1088px;
+}
+.labels{
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
+	height: 50px;
+}
+.contactsperson{
+	width: 30px;
+	height: 30px;
+}
+.up{
+	float: left;
+	margin-top: 5px;
+}
+.down{
+	float: left;
+    margin: 5px 0px 0px 5px;
+    width: 120px;
+}
+.inputtext{
+	margin: 0px 0px 0px 10px;
+	outline: none;
+	height: 30px;
+	width: 450px;
+}
+.textareadiv{
+	width: 50%;
+	height: 100px;
+	margin: 30px 0px 0px 175px;
+	overflow: hidden;
+}
+.textinside{
+	width: 450px;
+	height: 100%;
+	resize: none;
+	overflow: auto;
+}
+.submit{
+	color: #FEC786;
+	padding: 10px;
+	margin: 44px 0px 0px 350px;
+	border-radius: 25px;
+	width: 110px;
+	text-align: center;
+	background-color: #353E4D;
+	border:5px solid #FEC786 ;
+	font-size: 20px;
+	font-weight: bolder;
+	outline: none;
+}
+.submit:hover{
+	color: #353E4D;
+	border:5px solid #353E4D;
+	background-color: #FEC786;
+	font-weight: bolder;
+	/*text-shadow: 1px 1px 1px white;*//*if you want text shadow*/
+}
+.button{
+	color: #FEC786;
+	padding: 5px;
+	margin: 35px 0px 0px 300px;
+	border-radius: 25px;
+	width: 150px;
+	text-align: center;
+	background-color: transparent;
+	border:2px solid #DFE8E7 ;
+}
+.button:hover{
+	color: #DFE8E7;
+	border:2px solid #FEC786;
+}
+.map{
+	padding: 0px 10px 0px 10px;
+	margin-top: 40px;
+	height: 300px;
+}
+.map iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px 5px rgba(185, 116, 77,0.6);
+}
+.shopping{
+	height: 600px;
+	background-color: black;
+}
+.shopping img{
+	width: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(185, 116, 77,0.6);	
+}
+.footerpart{
+	background-image: url('../img/footer_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #D2832C;
+	height: 80px;
+	padding: 10px 0px 0px 15px;
+	font-family: PT Sans Narrow;
+}
+/*.h2aboutus{
+	margin: 50px 0px 0px 50px;
+	width: 30%;
+	float: left;
+}
+.customer{
+	float:right;
+}
+.customer img{
+	width: 50px;
+}*/
+.lefti{
+
+	margin: 0px 0px 0px 500px;
+	float: left;
+}
+.social{
+	margin-top: 15px;
+	margin-left: 550px;
+	text-align: center;
+	float: left;
+}
+.social img{
+	width: 30px;
+	box-shadow: 0px 0px 5px 5px rgba(185, 116, 77,0.6);
+	border-radius: 50%;
+}
+.social a{
+	padding-right: 5px;
+}
+/*.social img:hover{
+	transition: 2s;
+	transform: rotateY(360deg);
+}
+.fixup{
+	border-radius: 50%;
+	text-align: center;
+	float: left;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0px 0px 5px 5px rgba(185, 116, 77,0.6);
+}
+.rocket img{
+	width: 65px;
+	transform: rotateZ(45deg);
+}
+how to use animation
+.rocket img:hover{
+	animation-name: updown;
+  	animation-duration: 3s;
+  	/*animation-iteration-count: 5;
+}
+here we defined the animation name and what it will do.
+@keyframes updown{
+	from{
+		transform: translateY(0px)rotateZ(45deg);
+	}
+	to{
+		transform: translateY(-180px);
+	}
+}*/
+.h2aboutus span{
+	color: #D2832C;
+}
+.mainserices{
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 15px;
+}
+/*flip images*/
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 315px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 315px;
+  text-align: left;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  transition: 3s;
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: justify;
+}
+/* Style the back side */
+.flip-box-back{
+  	color: #343D4C;
+
+  	transform: rotateY(180deg);
+}
+.mainsericesleft{
+	margin: 10px 20px 0px 0px;
+	float: left;
+	width: 30%;
+}
+.mainsericesleft img{
+	width: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.6);
+}
+.mainsericesmid{
+	margin: 10px 20px 0px 20px;
+	float: left;
+	width: 30%;
+}
+.mainsericesmid img{
+	width: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.6);
+}
+.mainsericesright{
+	margin: 10px 20px 0px 20px;
+	float: left;
+	width: 30%;
+}
+.mainsericesright img{
+	width: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(52, 61, 76,0.6);
+}
