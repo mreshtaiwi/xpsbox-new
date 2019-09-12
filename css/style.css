@@ -225,7 +225,7 @@ header{
 	transition: transform 1s ease-in-out;
 }
 .photos2{
-	width: 100%;
+	/*width: 100%;*/
     padding: 5px;
     margin: 28px 15px 0px 100px;
     overflow: hidden;
